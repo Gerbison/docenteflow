@@ -8,25 +8,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap">
 <style>
+  /* Tema ESCURO fixo (as cores da demonstração), independente do sistema do visitante. */
   :root{
-    --bg:#F4F7F7; --surface:#FFFFFF; --surface-2:#EEF3F3;
-    --ink:#15272D; --muted:#5C6E74; --border:#E0E7E8;
-    --primary:#0E7C86; --primary-deep:#0B5C64;
-    --accent:#E1892A; --accent-ink:#3C2708;
-    --ring:rgba(14,124,134,.30);
-    --shadow:0 1px 2px rgba(20,40,45,.05),0 8px 24px rgba(20,40,45,.07);
-    --shadow-cta:0 6px 18px rgba(225,137,42,.35);
-  }
-  @media (prefers-color-scheme:dark){
-    :root{
-      --bg:#0D1417; --surface:#152025; --surface-2:#1B2A30;
-      --ink:#E9F1F2; --muted:#9CB0B6; --border:#25363C;
-      --primary:#37AAB4; --primary-deep:#8FD6DC;
-      --accent:#F0A94A; --accent-ink:#2A1B05;
-      --ring:rgba(55,170,180,.35);
-      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
-      --shadow-cta:0 6px 18px rgba(0,0,0,.45);
-    }
+    color-scheme: dark;
+    --bg:#0D1417; --surface:#152025; --surface-2:#1B2A30;
+    --ink:#E9F1F2; --muted:#9CB0B6; --border:#25363C;
+    --primary:#37AAB4; --primary-deep:#8FD6DC;
+    --accent:#F0A94A; --accent-ink:#2A1B05;
+    --ring:rgba(55,170,180,.35);
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    --shadow-cta:0 6px 18px rgba(0,0,0,.45);
   }
   *{box-sizing:border-box}
   html,body{margin:0}
@@ -92,7 +83,7 @@
 <main class="wrap">
   <section class="hero">
     <svg class="mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-      <rect x="4" y="4" width="56" height="56" rx="16" fill="#0E7C86"/>
+      <rect x="4" y="4" width="56" height="56" rx="16" fill="#37AAB4"/>
       <path d="M20 33.5l8.5 8.5L45 24" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <p class="eyebrow">Para professores da rede estadual · SEDU-ES</p>
